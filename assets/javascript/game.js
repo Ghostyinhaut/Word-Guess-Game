@@ -3,7 +3,7 @@
         var Guesses=document.getElementById("Guesses");
         var LettersGuessed=document.getElementById("LettersGuessed");
        
-        var arrOfWords=["golden-experience","killer-queen","sticky-finger","crazy-dimand"];
+        var arrOfWords=["golden-experience","killer-queen","sticky-finger","crazy-dimand","Star Platinum","Hermit Purple","Hierophant Green","The World","Moody Blues"];
         var WordPick= arrOfWords[Math.floor(Math.random() * arrOfWords.length)];
         console.log(WordPick);
         var GuessesLeft=12;
@@ -56,7 +56,7 @@
 
             //confirm if all chances of guess is used
             if(GuessesLeft==0){
-                alert("Dio has just beaten you up");
+                alert("MUDAMUDAMUDAMUDA!!!!!!!Dio has just beaten you up!!!!");
                 resetGame();
 
             }
@@ -64,6 +64,7 @@
             //confirm if the word is complete
             if(PrintWord==WordPick){
                 winsCounter++;
+                alert("OLAOLAOLAOLAOLAOLA!!!!!! You just Beat Dio!!!")
                 resetGame();
             }
             console.log(winsCounter);
